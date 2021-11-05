@@ -1,0 +1,100 @@
+/*SASS Variables*/
+
+// $myFont: Helvetica, sans-serif;
+// $myColor1: rgb(65, 59, 122);
+// $myColor2: rgb(233, 230, 230);
+// $myFontSize: 18px;
+// $myWidth: 680px;
+// $myStyle: italic;
+// $myContent: center;
+// $myBorder: rgb(255, 255, 255);
+// $myMargin: auto;
+
+
+@import "color";
+@import "reset";
+
+// h1{
+//     text-align: $myContent;
+// }
+
+// #about{
+//     width: 40%;
+//   margin: 10px 0px 20px 0px;
+//   margin-left: $myMargin;
+//   margin-right: $myMargin;  
+//   border: 4px solid;
+//   border-radius: 0px;
+//   height: 159px;
+//   justify-content: $myContent;
+// }
+
+// #img{
+//     float: right;
+//     width: 150px;
+//     margin-left: -20px;
+//     margin-top: $myMargin;
+// }
+
+// #abouttxt{
+//     width: 70%;
+//     margin-left: 20px;
+//     margin-top: 10px;
+//     font-size: 18px;
+//     justify-content: center;  
+// }
+
+@import 'color';
+@import 'mixin';
+*{
+    @include reset;
+}
+body{
+    background: $mycolor1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-fluid{
+    position: relative;
+    height:400px;
+    width:400px;
+    display: flex;
+    overflow: hidden;
+
+#signUp{
+    position: absolute;
+    left: 0;
+    width:100%;
+    padding:20px;
+    input{
+        width:100%;
+        padding:10px;
+        margin: 5px 0px 10px 0px;
+        margin-left: $myMargin;
+        margin-right: $myMargin;
+        
+        &[type='submit']{
+            background: $myColor2; //grey
+            border:none;
+            outline: none;
+            font-size: 18px;
+            color:#fff;
+            text-transform: uppercase;
+            &:hover{
+                background: $myColor3; //white
+            }
+        }
+    }
+}
+
+.active{
+    display: block;
+}
+.noactive{
+    display: none;
+}
+

@@ -1,0 +1,46 @@
+/*SASS Variables*/
+/* body {
+  background-color: #413b7a;
+  color: #e9e6e6;
+  font-style: italic; }
+
+#about {
+  border-color: white; }
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  text-align: center; }
+
+#about {
+  width: 40%;
+  margin: 10px 0px 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid;
+  border-radius: 0px;
+  height: 159px;
+  justify-content: center; }
+
+#img {
+  float: right;
+  width: 150px;
+  margin-left: -20px;
+  margin-top: auto; }
+
+#abouttxt {
+  width: 70%;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  justify-content: center; } */
+
+
+body{
+  background-color: blue;
+}
